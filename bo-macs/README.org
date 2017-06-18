@@ -7,23 +7,29 @@
 * Table of Contents                                        :TOC_4_gh:noexport:
 - [[#description][Description]]
 - [[#install][Install]]
+- [[#helper-functions][Helper functions]]
+  - [[#bo-string][bo-string]]
 - [[#key-bindings][Key bindings]]
 
 * Description
-Personal configuration and functions.
-This layer does wonderful things:
-  - Camel Case functions.
-
+  This layer includes helper functions for yasnippets or itself in general.
 * Install
-To use this configuration layer, add it to your =~/.spacemacs=. You will need to
-add =bo-macs= to the existing =dotspacemacs-configuration-layers= list in this
-file.
+  To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+  add =bo-macs= to the existing =dotspacemacs-configuration-layers= list in this
+  file.
 
+* Helper functions
+ 
+** bo-string
+   This includes a set of string manipulation helper functions.
+- =(bo/capitalize-char (string index))= Capitalize character at =index= (starts at 0) of =string=
+- =(bo/uncapitalize-char (string index))= Uncapitalize character at =index= (starts at 0) of =string=
+- =(bo/capitalize-first-char (stirng)= Capitalize the first character of =string=
+ 
 * Key bindings
 
 | Key Binding | Description    |
 |-------------+----------------|
-| ~SPC x x x~ | Does thing01   |
 # Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
 # Examples:
 # [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
