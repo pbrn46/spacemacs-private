@@ -1,5 +1,4 @@
-;; bo-string.el
-;; 
+
 (defun bo/capitalize-char (string index)
   "Capitalize specific character INDEX of the input STRING."
   (when (and string (> (length string) 0))

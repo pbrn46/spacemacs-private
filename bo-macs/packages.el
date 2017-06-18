@@ -31,7 +31,7 @@
 
 (defconst bo-macs-packages
   '(
-    (bo-string :location local)
+    ;; (bo-string :location local)
     )
   "The list of Lisp packages required by the bo-macs layer.
 
@@ -60,7 +60,4 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
-
-(defun bo-macs/init-bo-string ()
-  )
 ;;; packages.el ends here
