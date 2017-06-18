@@ -1,0 +1,11 @@
+#key: React.Component
+#
+#contributor: Boris Wong
+# --
+class ${1:ClassName} extends React.Component {
+  render() {
+    return (
+      <div className="${1:$(bo/uncapitalize-first-char yas-text)}">$0</div>
+    );
+  }
+}
